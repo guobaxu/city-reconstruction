@@ -28,6 +28,8 @@
 | 论文 | 使用场景 | 评估用途 |
 |---|---|---|
 | [CityGaussian](../papers/citygaussian.md) | Building、Rubble | 新视角合成、渲染效率 |
+| [CityGS-X](../papers/citygs-x.md) | Building、Rubble | 渲染评估、网格可视化；[原文 §4.1](https://arxiv.org/html/2503.23044v1) |
+
 
 ## 待补充
 
