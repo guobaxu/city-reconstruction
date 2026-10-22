@@ -36,6 +36,7 @@
 | [CityGaussian](../papers/citygaussian.md) | V1 的 Residence、Sci-Art | 新视角合成、渲染效率 |
 | [DroneSplat](../papers/dronesplat.md) | PolyTech、ArtSci；发布版本待核实，各 6 个输入视角 | 有限视角重建；[原文 §4.1、图 9](https://arxiv.org/html/2503.16964v1) |
 | [CityGS-X](../papers/citygs-x.md) | Residence、Sci-Art；发布版本待核实 | 渲染评估、网格可视化；[原文 §4.1](https://arxiv.org/html/2503.23044v1) |
+| [AnyCity](../papers/anycity.md) | Stage II 混合训练；场景与版本待核实 | [§4.1](https://arxiv.org/html/2605.19949v1) |
 
 
 ## 待补充

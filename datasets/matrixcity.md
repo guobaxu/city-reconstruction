@@ -33,6 +33,7 @@ RGB 为 PNG；深度和法线使用 EXR。深度为 Z-depth，单位为 cm；另
 | [CityGaussian](../papers/citygaussian.md) | Small City 全城航拍；街景 Block_A | 新视角合成、渲染速度 |
 | [CityGaussianV2](../papers/citygaussian-v2.md) | 航拍与街景；仓库指定 small_city | 渲染、几何重建 |
 | [CityGS-X](../papers/citygs-x.md) | Small City 的 Aerial 航拍场景 | 渲染、表面重建；[原文 §4.1](https://arxiv.org/html/2503.23044v1) |
+| [AnyCity](../papers/anycity.md) | Stage I 几何骨架训练 | [§4.1](https://arxiv.org/html/2605.19949v1) |
 
 
 ## 待补充
