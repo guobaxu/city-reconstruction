@@ -1,32 +1,38 @@
 # MatrixCity
 
-[数据集列表](README.md) · [论文列表](../papers/README.md)
+[数据集列表](README.md)
 
-- **类型**：合成城市；航拍和街景
-- **本库关注版本**：small_city
-- **数据内容**：RGB、相机位姿；官方另提供深度、法线、材质属性及点云等
-- **数据集原始论文**：MatrixCity: A Large-scale City Dataset for City-scale Neural Rendering and Beyond（ICCV 2023）；入口见官方仓库
+- **类型 / 视角**：合成城市；航拍和街景
+- **模态**：RGB、相机位姿、深度、法线、材质属性、点云
 - **核查日期**：2026-10-22
 
-## 使用该数据集的论文
+## 场景与规模
+
+| 场景版本 | 地图面积 | 视角 |
+|---|---|---|
+| small_city | 2.7 km² | 航拍、街景 |
+| big_city | 25.3 km² | 航拍、街景 |
+
+街景普通训练集采集间隔为 5 m，密集训练集为 1 m。图像数量、分辨率及下载体积需按版本、视角和数据包分别统计。来源：[官方数据结构说明](https://github.com/city-super/MatrixCity#data-structure)。
+
+## 数据内容与格式
+
+RGB 为 PNG；深度和法线使用 EXR。深度为 Z-depth，单位为 cm；另有 float32 深度包。Small City 还提供 diffuse、metallic、roughness、specular 和航拍 / 街景点云。[官方格式说明](https://github.com/city-super/MatrixCity#data-color-space)
+
+相机位姿保存为 JSON 中的 camera-to-world 矩阵。原始块目录与整理后的 pose 目录采用不同位置尺度，使用前应核对坐标单位。[位姿说明](https://github.com/city-super/MatrixCity#pose-file-structure)
+
+## 获取方式
+
+- [官方仓库与下载说明](https://github.com/city-super/MatrixCity#data-download)
+- [Hugging Face 数据目录](https://huggingface.co/datasets/BoDai/MatrixCity/tree/main)
+
+## 使用该数据集的已收录论文
 
 | 论文 | 使用范围 | 评估用途 |
 |---|---|---|
 | [CityGaussian](../papers/citygaussian.md) | Small City 全城航拍；街景 Block_A | 新视角合成、渲染速度 |
-| [CityGaussianV2](../papers/citygaussian-v2.md) | 航拍与街景；仓库准备文档指定 small_city | 渲染、几何重建 |
-
-## 获取与准备
-
-- [官方仓库及下载说明](https://github.com/city-super/MatrixCity)
-- [Hugging Face 数据目录](https://huggingface.co/datasets/BoDai/MatrixCity/tree/main)
-- [CityGaussian 预处理说明](https://github.com/Linketic/CityGaussian/blob/main/doc/data_preparation.md#prepare-matrixcity-dataset)
-
-按项目文档将航拍原始数据放入 `data/matrix_city/aerial`，使用作者 COLMAP 结果或从头准备。当前文档的图像下采样倍率为航拍 1.2、街景 1.0。V1 论文的航拍设置记为宽度 1600，比较实验时应核对实际输出分辨率。
-
-## 几何与版本注意事项
-
-CityGaussian 为该数据提供几何评估真值包，见数据准备文档。下载时区分 small_city、big_city、深度与图像包；不同位姿文件的坐标尺度及深度格式以官方说明为准。授权条件以数据集原始发布方为准。
+| [CityGaussianV2](../papers/citygaussian-v2.md) | 航拍与街景；仓库指定 small_city | 渲染、几何重建 |
 
 ## 待补充
 
-实际下载体积、各实验使用的精确图像清单、许可条款核对、下载与复现状态。
+各数据包图像数、分辨率、下载体积、数据授权条款及本地下载状态。

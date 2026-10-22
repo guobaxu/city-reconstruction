@@ -2,11 +2,11 @@
 
 [返回首页](../README.md) · [切换到论文列表](../papers/README.md)
 
-| 数据集 | 类型 / 视角 | 本库涉及的版本与场景 | 几何评估资料 | 使用该数据集的已收录论文 |
+| 数据集 | 类型 / 视角 | 场景与规模 | 数据内容 | 使用该数据集的已收录论文 |
 |---|---|---|---|---|
-| [MatrixCity](matrixcity.md) | 合成；航拍、街景 | small_city；V1 街景明确为 Block_A | CityGaussian 提供评估真值包 | [CityGaussian](../papers/citygaussian.md)、[CityGaussianV2](../papers/citygaussian-v2.md) |
-| [Mill19](mill19.md) | 真实；无人机航拍 | Building、Rubble | 未纳入 CityGaussian 几何评估包 | [CityGaussian](../papers/citygaussian.md) |
-| [UrbanScene3D](urbanscene3d.md) | 本项目使用真实航拍部分 | V1；Residence、Sci-Art | 未纳入 CityGaussian 几何评估包 | [CityGaussian](../papers/citygaussian.md) |
-| [GauU-Scene](gauu-scene.md) | 真实；无人机 RGB、LiDAR | V2 论文与仓库场景命名存在差异，见详情 | LiDAR 真值；CityGaussian 提供评估包 | [CityGaussianV2](../papers/citygaussian-v2.md) |
+| [MatrixCity](matrixcity.md) | 合成；航拍、街景 | Small City：2.7 km²；Big City：25.3 km² | RGB、相机位姿、深度、法线、材质属性、点云等 | [CityGaussian](../papers/citygaussian.md)、[CityGaussianV2](../papers/citygaussian-v2.md) |
+| [Mill19](mill19.md) | 真实；无人机航拍 | Building、Rubble，共 2 个场景；详细规模待核实 | RGB、相机参数与位姿 | [CityGaussian](../papers/citygaussian.md) |
+| [UrbanScene3D](urbanscene3d.md) | 真实与合成；城市航拍 | V1 下载区列出 Residence、Campus、Sci-Art、Square、Hospital | 图像、合成场景路径、模拟器、评估资料等 | [CityGaussian](../papers/citygaussian.md) |
+| [GauU-Scene](gauu-scene.md) | 真实；无人机航拍 | 官网 Table 2：6 个场景，4,693 张图像，6.668 km² | RGB、LiDAR 点云 | [CityGaussianV2](../papers/citygaussian-v2.md) |
 
-“几何评估资料”描述 CityGaussian 的评估流程，不等于对原始数据集全部版本的判断。使用论文列表仅覆盖本资料库已收录论文。
+统计范围与来源见各数据集详情。不同版本、数据包的数量和体积分别记录，未核实的信息保留为空缺。
