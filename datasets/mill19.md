@@ -29,6 +29,7 @@
 |---|---|---|
 | [CityGaussian](../papers/citygaussian.md) | Building、Rubble | 新视角合成、渲染效率 |
 | [CityGS-X](../papers/citygs-x.md) | Building、Rubble | 渲染评估、网格可视化；[原文 §4.1](https://arxiv.org/html/2503.23044v1) |
+| [MetroGS](../papers/metrogs.md) | Building、Rubble | 补充渲染评估；[附录 C.3、表 6](https://arxiv.org/html/2511.19172v1) |
 
 
 ## 待补充

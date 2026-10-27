@@ -36,6 +36,7 @@
 | 论文 | 论文中的场景名称 | 评估用途 |
 |---|---|---|
 | [CityGaussianV2](../papers/citygaussian-v2.md) | Residence、Russian Building、Modern Building | 新视角合成、几何重建 |
+| [MetroGS](../papers/metrogs.md) | Russian Building、Residence、Modern Building | 渲染、几何重建；[§5.1、表 1](https://arxiv.org/html/2511.19172v1) |
 
 论文与当前代码中的场景名称差异及待核实映射见[论文详情](../papers/citygaussian-v2.md)。
 
